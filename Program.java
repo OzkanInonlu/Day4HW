@@ -9,7 +9,7 @@ public class Program {
     public static void main(String[] args){
     	try {
         	BaseCustomerManager customerManager=new StarbucksCustomerManager(new MernisServiceAdapter());
-        	customerManager.saveDb(new Customer(1,"Özkan","İnönlü",LocalDate.of(2001, 6, 13),"73096031098"));
+        	customerManager.saveDb(new Customer(1,"Ã–zkan","ÃnÃ¶nlÃ¼",LocalDate.of("yÄ±l", "ay", "gÃ¼n"),"TC kimlik"));
 		}catch(Exception e) {
 			System.out.println("Error : " + e.getMessage() );
 		}
